@@ -5,11 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonoklo</title>
-    <meta name="description" content="Sonoklo is coming June 1rst, 2026 on the Play Store">
+    <meta name="description" content="Sonoklo is coming June 1st, 2026, on the Play Store">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url("./assets/bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+
+            width: 100vw;
+            height: 100vh;
+            padding: 32px;
+            margin: 0;
+            box-sizing: border-box;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #e8caca;
+            text-transform: uppercase;
+            /* font-size: clamp(12px, 12vh, 100px); */
+            font-size: clamp(24px, 10vw, 100px); 
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            margin: 32px;
+            width: 100vw;
+            max-width: 90vw;
+            text-align: center;
+        }
+
+        
+
+        h2 {
+            color: #c79698;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            width: clamp(30px, 5vw, 60px);
+            text-align: center;
+            font-size: clamp(15px, 5vw, 30px); 
+        }
+
+        img {
+            height: 30%;
+            aspect-ratio: 1;
+        }
+
+        path {
+            fill: #c79698;
+        }
+
+        svg {
+            height: 40px;
+            aspect-ratio: 1;
+        }
+
+        #countdown {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            flex-direction: row;
+        }
+    </style>
 </head>
 
 <body>
-<h1>Sonoklo</h1>
+    <h1>Sonoklo</h1>
+    <image src="./assets/fg.png"></image>
+    <div id="countdown">
+        <h2 id="days">--</h2>
+        <h2 id="hours">--</h2>
+        <h2 id="min">--</h2>
+        <h2 id="sec">--</h2>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <title>Google Play</title>
+        <path
+            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
+    </svg>
 </body>
+
+<script src="script.js"></script>
 
 </html>
