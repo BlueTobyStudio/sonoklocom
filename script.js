@@ -1,4 +1,4 @@
-const RELEASE_DATE = new Date("2026-06-01");
+const RELEASE_DATE = new Date("2026-06-11");
 
 function update_countdown() {
     const seconds = get_seconds_until(RELEASE_DATE);
