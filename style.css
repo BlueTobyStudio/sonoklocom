@@ -225,3 +225,11 @@ body {
   /* width: 90%; */
   font-family: Rubik, sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Phone size */
+
+  .newsletterpopup {
+    display: none;
+  }
+}
